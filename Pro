@@ -1,0 +1,403 @@
+local StarterGui = game:GetService("StarterGui")
+
+    local Notifications = {
+        "Notification Message 1",
+    }
+    for i = 1, #Notifications do
+            local Notification = Notifications[i]
+            
+            StarterGui:SetCore("SendNotification", {
+                Title = "Script loading...",
+                Text = "Wait 5 sec",
+                Duration = 10
+            })
+        end
+wait(5)
+        if game.PlaceId == 5611648039 then
+            local StarterGui = game:GetService("StarterGui")
+
+    local Notifications = {
+        "Notification Message 1",
+    }
+    for i = 1, #Notifications do
+            local Notification = Notifications[i]
+            
+            StarterGui:SetCore("SendNotification", {
+                Title = "Script Loaded successfully",
+                Text = "Have fun",
+                Duration = 10
+            })
+        end   
+local VLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vep1032/VepStuff/main/VL"))()
+local Tittle = VLib:Window("MurderParty", "By QWERTYT", "G")
+
+local Mainsection = Tittle:Tab("Main")
+Mainsection:Label("Made by QWE3TYT")
+Mainsection:Label("MuderParty Script")
+Mainsection:Label("Discord Server")
+Mainsection:Label("https://discord.gg/5MHDeV2KMu")
+Mainsection:Button("Copy", function()
+    
+end)
+
+local Autofarmsection = Tittle:Tab("Autofarm")
+
+Autofarmsection:Label("Autofarms:")
+Autofarmsection:Toggle("AutoFarm lab", function (t)
+_G.TPPlayer = t
+    while _G.TPPlayer do wait(0.001)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(754, -136, 1685)
+    end
+end)
+Autofarmsection:Toggle("AutoFarm Sheriff's farm", function (t)
+    _G.TPPlayer = t
+        while _G.TPPlayer do wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1678, 160, -1816)
+        end
+    end)
+    Autofarmsection:Toggle("AutoFarm Clockwork", function (t)
+        _G.TPPlayer = t
+            while _G.TPPlayer do wait(0.001)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(713, 234, -1910)
+            end
+        end)
+        Autofarmsection:Toggle("AutoFarm lab", function (t)
+            _G.TPPlayer = t
+                while _G.TPPlayer do wait(0.001)
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(754, -136, 1685)
+                end
+            end)
+            Autofarmsection:Toggle("AutoFarm Party Castle", function (t)
+                _G.TPPlayer = t
+                    while _G.TPPlayer do wait(0.001)
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-201, 171, 2958)
+                    end
+                end)
+                Autofarmsection:Toggle("AutoFarm Murder Mansion", function (t)
+                    _G.TPPlayer = t
+                        while _G.TPPlayer do wait(0.001)
+                        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1581, 183, 2073)
+                        end
+                    end)
+                    Autofarmsection:Toggle("AutoFarm Lumberyard", function (t)
+                        _G.TPPlayer = t
+                            while _G.TPPlayer do wait(0.001)
+                            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3964, 939, 38)
+                            end
+                        end)
+                        Autofarmsection:Toggle("AutoFarm Magic School", function (t)
+                            _G.TPPlayer = t
+                                while _G.TPPlayer do wait(0.001)
+                                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2212, 152, 1029)
+                                end
+                            end)
+                            Autofarmsection:Toggle("AutoFarm hacker's lair", function (t)
+                                _G.TPPlayer = t
+                                    while _G.TPPlayer do wait(0.001)
+                                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-258, 29, 1930)
+                                    end
+                                end)
+                                Autofarmsection:Toggle("AutoFarm Party studio", function (t)
+                                    _G.TPPlayer = t
+                                        while _G.TPPlayer do wait(0.001)
+                                        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1915, 690, 3016)
+                                        end
+                                    end)
+                                    Autofarmsection:Toggle("AutoFarm Box park", function (t)
+                                        _G.TPPlayer = t
+                                            while _G.TPPlayer do wait(0.001)
+                                            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1227, 601, -297)
+                                            end
+                                        end)
+                                                                                                                                                                                    
+Autofarmsection:Button("Advertise", function()
+    local StarterGui = game:GetService("StarterGui")
+
+    local Notifications = {
+        "Notification Message 1",
+    }
+    for i = 1, #Notifications do
+            local Notification = Notifications[i]
+            
+            StarterGui:SetCore("SendNotification", {
+                Title = "How to use",
+                Text = "Select every map ur playing",
+                Duration = 5
+            })
+        end
+    end)
+Autofarmsection:Label("Cheats:")
+
+Autofarmsection:Button("Pick up Coins", function()
+end)
+
+local Teleportsection = Tittle:Tab("Teleports")
+
+Plr = {}
+        for i,v in pairs(game:GetService("Players"):GetChildren()) do
+            table.insert(Plr,v.Name) 
+        end
+        local drop = Teleportsection:Dropdown("Select Player!", Plr, function(t)
+           PlayerTP = t
+        end)
+       Teleportsection:Button("Click To TP", function()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[PlayerTP].Character.HumanoidRootPart.CFrame
+        end)
+        Teleportsection:Toggle("Auto Tp", function(t)
+        _G.TPPlayer = t
+        while _G.TPPlayer do wait()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[PlayerTP].Character.HumanoidRootPart.CFrame
+        end
+        end)
+
+Teleportsection:Label("Teleprots:")
+Teleportsection:Toggle("TeleportBypass",function (pro)
+if pro ==  true then
+    local args = {[1] = true}
+    game:GetService("ReplicatedStorage").Events.SetAFK:FireServer(unpack(args))
+else if pro == false then
+    local args = {[1] = false}  
+    game:GetService("ReplicatedStorage").Events.SetAFK:FireServer(unpack(args))
+end
+end
+end)
+Teleportsection:Button("Advertise", function ()
+    local StarterGui = game:GetService("StarterGui")
+
+    local Notifications = {"Notification Message 1",}
+    for i = 1, #Notifications do
+            local Notification = Notifications[i]
+            
+            StarterGui:SetCore("SendNotification", {
+                Title = "How to use",
+                Text = "Teleports only work when bypass on",
+                Duration = 5
+            })
+        end
+    end)
+
+Teleportsection:Button("Spawn", function ()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(15, 1215, 23) 
+end)
+Teleportsection:Button("Clockwork", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(722, 186, -1908) 
+end)
+Teleportsection:Button("Party Castle", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-203, 76, 2820) 
+end)
+Teleportsection:Button("Party studio", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1705, 636, 3076) 
+end)
+Teleportsection:Button("Muder Mansion", function ()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1495, 160, 2027)   
+end)
+Teleportsection:Button("Hacker's lair", function ()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-219, 22, 1890)   
+end)
+Teleportsection:Button("Box park", function ()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1193, 603, -187)   
+end)
+Teleportsection:Button("The lab", function ()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(748, -154, 1710)   
+end)
+Teleportsection:Button("Sheriff's farm", function ()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1523, 162, -1802) 
+end)
+Teleportsection:Button("Lumberyard", function ()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4056, 918, -29)  
+end)
+Teleportsection:Button("Magic school", function ()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2192, 98, 1093)   
+end)
+
+
+
+local LocalPlayersection = Tittle:Tab("LocalPlayer")
+
+    LocalPlayersection:Slider("Walkspeed",0,250,16, function(speed)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speed
+    end)
+    LocalPlayersection:Slider("JumpPower",50,250,50, function (jump)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = jump
+    end)
+    LocalPlayersection:Label("Others:")
+    LocalPlayersection:Button("InfJump", function ()
+    local InfiniteJumpEnabled = true
+    game:GetService("UserInputService").JumpRequest:connect(function()
+    if InfiniteJumpEnabled then
+    game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+    end
+    end)
+    end)
+    LocalPlayersection:Button("[E] to Fly", function ()
+        print("Click E to Toggle Fly")
+    loadstring(game:HttpGet("https://pastebin.com/raw/9tZMx4SW"))()
+    end)
+    LocalPlayersection:Toggle("Noclip not working", function (noclip)
+    noclip = false
+    if noclip then
+    game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+    else
+    game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+    end
+    end)
+    print('Loaded')
+    LocalPlayersection:Slider("Fov",0, 120, 70, function (FOV)
+        workspace.currentCamera.fieldofView = FOV
+        if FOV then
+            print("Fov Set [Fov]")
+        end
+    end)
+    LocalPlayersection:Label("Normal Player FOV is 70")
+    
+    LocalPlayersection:Button("Fullbright", function ()
+        loadstring(game:HttpGet("https://pastebin.com/raw/06iG6YkU", true))()
+    end)
+    LocalPlayersection:Button("Cords GUi", function (Cords)
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    print(pl.CFrame)
+    end)
+    LocalPlayersection:Button("Btools", function ()
+        loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
+    end)
+    LocalPlayersection:Button("Rejoin Game", function ()
+        local ts = game:GetService("TeleportService")
+    local p = game:GetService("Players").LocalPlayer
+    
+    ts:Teleport(game.PlaceId, p)
+    end)
+    
+    LocalPlayersection:Button("Destroy GUI", function ()
+        game.CoreGui.Library.MainFrame:Destroy()
+    end)
+
+
+
+local visualsection = Tittle:Tab("Visuals")
+visualsection:Button("ALL teams ESP", function()
+
+    for i,v in pairs(game.Workspace:GetDescendants()) do -- grabs everything from workspace
+        if v.ClassName == 'TouchTransmitter' and v.Parent.Name == 'Handle' then -- checks if it has a handle and if its a touchtransmitter
+            local BillboardGui = Instance.new('BillboardGui') -- Makes Billboardgui
+            local TextLabel = Instance.new('TextLabel') -- makes text label
+            
+            BillboardGui.Parent = v.Parent -- what the billboardgui goes into
+            BillboardGui.AlwaysOnTop = true -- if its on top or not
+            BillboardGui.Size = UDim2.new(0, 50, 0, 50) -- size of it
+            BillboardGui.StudsOffset = Vector3.new(0,2,0)
+            
+            TextLabel.Parent = BillboardGui -- putting textlabel into billboardgui
+            TextLabel.BackgroundColor3 = Color3.new(1,1,1) -- color
+            TextLabel.BackgroundTransparency = 1 -- transparency
+            TextLabel.Size = UDim2.new(1, 0, 1, 0) -- size
+            TextLabel.Text = v.Parent.Parent.Name -- what the label says
+            TextLabel.TextColor3 = Color3.new(1, 0, 0) -- color
+            TextLabel.TextScaled = true -- if the text is scaled or not
+    end
+end
+end)
+visualsection:Button("Universal ESP", function ()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Cornyllius/ESPs/main/BlissESP.lua", true))()
+end)
+visualsection:Button("UnnamedESP", function ()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua',true))()
+end)
+
+
+
+local creditsection = Tittle:Tab("Credits")
+
+creditsection:Label("CREDITS:")
+creditsection:Label("RightCtrl to Toggle GUI")
+creditsection:Label("Did u enjoyed script?")
+creditsection:Button("Yes", function ()
+
+local StarterGui = game:GetService("StarterGui")
+
+local Notifications = {"Notification Message 1",}
+for i = 1, #Notifications do
+        local Notification = Notifications[i]
+        
+        StarterGui:SetCore("SendNotification", {
+            Title = "Thank you",
+            text = "Have fun :)",
+            Duration = 10
+        })
+    end
+end)
+creditsection:Button("No", function (pro)
+if pro then
+    local StarterGui = game:GetService("StarterGui")
+
+    local Notifications = {
+        "Notification Message 1",
+    }
+    for i = 1, #Notifications do
+            local Notification = Notifications[i]
+            
+            StarterGui:SetCore("SendNotification", {
+                Title = "Waht did u say?",
+                text = "Wait 5 sec",
+                Duration = 10
+            })
+
+    
+wait(5)
+    local StarterGui = game:GetService("StarterGui")
+
+    local Notifications = {
+        "Notification Message 1",
+    }
+    for i = 1, #Notifications do
+            local Notification = Notifications[i]
+            
+            StarterGui:SetCore("SendNotification", {
+                Title = "noob im the best scripter",
+                text = "please shut",
+                Duration = 10
+            })
+        end
+    end
+ end
+end)
+creditsection:Label("Made by a legend pro")
+creditsection:Label("Free Version")
+
+
+
+local function CheckForHide(input, gameProcessed)
+
+    local keycode = input.KeyCode
+
+    if keycode == Enum.KeyCode.RightAlt then 
+            if visible == true then
+                visible = false
+                game.CoreGui.Library.MainFrame.Visible = false
+            else
+                visible = true
+                game.CoreGui.Library.MainFrame.Visible = true
+            end
+    end
+end
+userInput.InputBegan:Connect(CheckForHide)
+else
+    wait(5)
+    local StarterGui = game:GetService("StarterGui")
+
+    local Notifications = {
+        "Notification Message 1",
+    }
+    for i = 1, #Notifications do
+            local Notification = Notifications[i]
+            
+            StarterGui:SetCore("SendNotification", {
+                Title = "Error",
+                Text = "Please join MuderParty",
+                Duration = 10
+            })
+        end   
+
+
+
+
+end
